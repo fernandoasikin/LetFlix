@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.logo-container{
+    height: 70%;
+}
+.header-logo{
+    margin-left: 20px;
+    height: 100%;
+}
+
+.menu-icon{
+    padding-right: 10px;
+    height: 50px;
+}
+
+.hover-me{
+    background-color: black;
+}
+
+.hover-me:hover{
+    background-color: gray;
+}
+
+.right:hover .drop-content{
+    display: flex;
+}
+
+.drop-content a:hover {
+    background-color: #00ff36;
+}
+
+.drop-content{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 60px;
+    right: 0;
+    text-align: center;
+}
+
+.drop-content a{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.carousel{
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.nav{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carouselimg{
+    width: 100%;
+    position: relative;
+}
+
+#prev, #next{
+    position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: white;
+    font-size: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#prev:hover, #next:hover{
+    color: #00ff36;
+}
+
+.dot-nav{
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.dot{
+    color: white;
+    font-size: 25px;
+    padding: 5px
+}
+
+.watchbtn{
+    /* width: 100%; */
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    color: white;
+}
+
+.watchnowbtn{
+    position: relative;
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    background-color: #00ff36;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.watchnowbtn:hover{
+    background-color: gray;
+    box-shadow: 0px 5px 5px 0px white;
+}
+
+.watchnowbtn:hover a{
+    color: white;
+}
+
+.whychoose{
+    height: 150px;
+    background-color: black;
+    text-decoration-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+.homecontent1{
+    height: 400px;
+    background-image: url('../watchanything.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    padding-right: 10%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.homecontent2{
+    height: 400px;
+    background-image: url('../kidsmode.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    padding-left: 10%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.homecontent3{
+    height: 400px;
+    background-image: url('../offlinewatch.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    padding-right: 10%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    height: 60px;
+    background-color: #00ff36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #00ff36;
+    color: white;
+    cursor: pointer;
+    padding: 4px 17px 4px 17px;
+    border-radius: 50px;
+    font-size: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+  .aboutcontent1a{
+    height: 400px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 200%;
+}
+
+.aboutcontent1b{
+    height: 300px;
+    color: white;
+    background-color: black;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    display: flex;
+    background-image: url('../wallabout.png');
+    background-size: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 110%;
+}
+
+.aboutcontent2a{
+    height: 300px;
+    color: white;
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    text-align: center;
+    display: flex;
+    background-image: url('../peoplegathered.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    font-size: 400%;
+}
+
+.aboutcontent2b{
+    height: 300px;
+    color: white;
+    background-color: black;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+}
+
+.aboutcontent2c{
+    height: 100px;
+    color: white;
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 180%;
+}
+
+.aboutcontent2d{
+    /* height: 750px; */
+    color: white;
+    background-color: black;
+    padding: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 100%;
+}
+
+.ceopic{
+    width : 250px;
+    height : auto;
+}
+
+.aboutcontent2e{
+    height: 200px;
+    color: white;
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 100%;
+    background-image: url('../wallabout.png');
+    background-size: 100%;
+}
+
+.subscribeheader{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+form{
+    height: 100%;
+    margin: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 50px;
+}
+
+form p{
+    color: red;
+    font-size: 14px;
+}
+
+.submitbtn{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    background-color: #00ff36;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.submitbtn:hover{
+    background-color: gray;
+    color: white;
+    box-shadow: 0px 5px 5px 0px white;
+}
+
+.planhead{
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('../wallabout.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.benefits{
+    padding: 0px 20px 20px 50px;
+}
+
+.benefits ul{
+    padding-left: 20px;
+}
+
+.planscontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.plansdesc{
+    width: 25%;
+}
+
+.silver{
+    width: 25%;
+    background-color: silver;
+    color: black;
+}
+
+.gold{
+    width: 25%;
+    background-color: gold;
+    color: black;
+}
+
+.platinum{
+    width: 25%;
+    background-color: #E5E4E2;
+    color: black;
+}
+
+.notes{
+    padding: 30px;
+    color: gray;
+    font-size: 15px;
+}
+
+.subnow{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.subnowbtn{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    background-color: #00ff36;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.subnowbtn:hover{
+    background-color: gray;
+    color: white;
+    box-shadow: 0px 5px 5px 0px white;
+}
+
+.inpbox{
+    width: 25%;
+    margin: 10px;
+    padding: 7px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff36;
+    border-radius: 25px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+
+.country{
+    padding: 20px;
+}
+
+.movies{
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.film{
+    padding: 15px;
+    text-align: center;
+    width: 270px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.film h3{
+    padding: 15px;
+}
+
+.coverfilm{
+    height: 400px;
+    border-radius: 25px;
+}
+
