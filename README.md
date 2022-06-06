@@ -2,4 +2,4 @@
 LetFlix was a HTML, CSS, JS project from Human Computer Interaction class on BINUS Semester 4
 
 
-![Slide 16_9 - 1](https://user-images.githubusercontent.com/59933093/136996013-685cf0bb-ca84-42d9-bafd-223a3bc8ba56.jpg)
+![Project1](https://user-images.githubusercontent.com/59933093/172214297-30a3e547-2685-420d-81b5-7d49e8a339dc.png)
